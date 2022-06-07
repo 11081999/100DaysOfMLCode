@@ -7,12 +7,12 @@
 **Thoughts** : Hope this will be exciting and will help me in learning Machine Learning in a more effective way.
 
 ***
-
- _._     _,-'""`-._         <br />
-(,-.`._,'(       |\`-/|     <br />
-    `-.-' \ )-`( , o o)     <br />
-          `-    \`_`"'-     <br />
-
+```
+_._     _,-'""`-._     
+(,-.`._,'(       |\`-/|
+    `-.-' \ )-`( , o o)
+          `-    \`_`"'-
+```
 ***
 
 ## Day 1 : Jul 1 , 2018
