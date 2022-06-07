@@ -53,7 +53,7 @@ X_test = sc_X.fit_transform(X_test)
 ### Done :smile:
 
 ***
-### UPDATED CODE by me 
+### UPDATED CODE by me as of 2022
 
 #Step 1: Importing the libraries
 ```Python
@@ -109,4 +109,4 @@ X_test = scaler_X.fit_transform(X_test)
 ```
 #Step 7: Make a graph (?), maybe next time...
 
-#?: Done !
+#Done !
