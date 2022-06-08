@@ -26,7 +26,7 @@ _._     _,-'""`-._
 
 
 
-**Link of Work:**   [Day_1](https://github.com/11081999/100DaysOfMLCode/tree/main/Code/Day_1)
+**Link of Work** : [Day_1](https://github.com/11081999/100DaysOfMLCode/tree/main/Code/Day_1)
 
 
 ***
@@ -55,7 +55,7 @@ _._     _,-'""`-._
 [Web page 1](https://www.unite.ai/what-is-linear-regression/)<br>
 [video 1](https://www.youtube.com/watch?v=nk2CQITm_eo)<br>
 
-**Link of Work:** : [Day_2](https://github.com/11081999/100DaysOfMLCode/tree/main/Code/Day_2)
+**Link of Work** : [Day_2](https://github.com/11081999/100DaysOfMLCode/tree/main/Code/Day_2)
 
 ***
 ```
