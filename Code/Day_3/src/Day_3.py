@@ -46,9 +46,10 @@ print("\n >> Prediction \n")
 print("Y_pred:    \n", y_pred)
 
 #!This seems a little sus, needs to be checked
+#! x and y must be the same size, idk what´s with that
 #plt.scatter(X_test , Y_test, color = 'blue')
 #plt.scatter(X_train , Y_train, color = 'red')
-#plt.scatter(X_test , y_pred, color = 'pink')
+#plt.scatter(X, y_pred, color = 'pink')
 #plt.show()
 
 #? Done!
