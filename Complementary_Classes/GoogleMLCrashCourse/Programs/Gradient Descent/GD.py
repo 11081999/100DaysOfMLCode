@@ -78,4 +78,4 @@ print("Y: \n", Y)
 
 gradient_descent(X, Y)
 
-#?: Done !
+#?  Done !
