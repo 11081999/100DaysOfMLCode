@@ -115,8 +115,8 @@ where:
 
 - **(x, y)** is an example in which
 
-- - **x** is the set of features (for example, chirps/minute, age, gender) that the model uses to make predictions.
-- - **y** is the example's label (for example, temperature).
+    - **x** is the set of features (for example, chirps/minute, age, gender) that the model uses to make predictions.
+    - **y** is the example's label (for example, temperature).
 
 - **prediction(x)** is a function of the weights and bias in combination with the set of features.
 - **D** is a data set containing many labeled examples, which are **(x, y)** pairs.
