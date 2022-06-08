@@ -76,7 +76,7 @@ By convention in machine learning, you'll write the equation for a model slightl
 where:
 
 - ***y'*** is the predicted label (a desired output).
-- ***b*** is the bias (the y-intercept), sometimes referred to as
+- ***b*** is the bias (the y-intercept), sometimes referred to as ***w0***
 - ***w1*** is the weight of feature 1. Weight is the same concept as the "slope" ***m*** in the traditional equation of a line.
 - ***x1*** is a feature (a known input).
 
