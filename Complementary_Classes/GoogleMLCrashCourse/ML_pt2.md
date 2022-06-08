@@ -3,6 +3,8 @@
 ##  Generalization.
 
 ### Generalization | Peril of Overfitting
+An **overfit** model gets a low loss during training but does a poor job predicting new data. If a model fits the current sample well, how can we trust that it will make good predictions on new data? As you'll [see later on](https://developers.google.com/machine-learning/crash-course/regularization-for-simplicity/l2-regularization), overfitting is caused by making a model more complex than necessary. The fundamental tension of machine learning is between fitting our data well, but also fitting the data as simply as possible.
+
 Machine learning's goal is to predict well on new data drawn from a (hidden) true probability distribution. Unfortunately, the model can't see the whole truth; the model can only sample from a training data set. If a model fits the current examples well, how can you trust the model will also make good predictions on never-before-seen examples?
 William of Ockham, a 14th century friar and philosopher, loved simplicity. He believed that scientists should prefer simpler formulas or theories over more complex ones. To put Ockham's razor in machine learning terms:
 
@@ -57,8 +59,18 @@ Assuming that your test set meets the preceding two conditions, your goal is to 
 ```diff 
 - Never train on test data.
 ``` 
+
 If you are seeing surprisingly good results on your evaluation metrics, it might be a sign that you are accidentally training on the test set. For example, high accuracy might indicate that test data has leaked into the training set.
 
 For example, consider a model that predicts whether an email is spam, using the subject line, email body, and sender's email address as features. We apportion the data into training and test sets, with an 80-20 split. After training, the model achieves 99% precision on both the training set and the test set. We'd expect a lower precision on the test set, so we take another look at the data and discover that many of the examples in the test set are duplicates of examples in the training set (we neglected to scrub duplicate entries for the same spam email from our input database before splitting the data). We've inadvertently trained on some of our test data, and as a result, we're no longer accurately measuring how well our model generalizes to new data.
 
-[Source](https://developers.google.com/machine-learning/crash-course/generalization/peril-of-overfitting)
+[Source](https://developers.google.com/machine-learning/crash-course/training-and-test-sets/splitting-data)
+***
+##  Validation Set
+
+### Validation Set | ...
+
+
+
+
+[Source](   )
