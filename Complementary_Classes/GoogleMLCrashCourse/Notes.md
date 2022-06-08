@@ -156,15 +156,32 @@ The "Compute Loss" part of the diagram is the [loss function](https://developers
 - **y**: The correct label corresponding to features x.
 
 At last, we've reached the "Compute parameter updates" part of the diagram. It is here that the machine learning system examines the value of the loss function and generates new values for
-and . For now, just assume that this mysterious box devises new values and then the machine learning system re-evaluates all those features against all those labels, yielding a new value for the loss function, which yields new parameter values. And the learning continues iterating until the algorithm discovers the model parameters with the lowest possible loss. Usually, you iterate until overall loss stops changing or at least changes extremely slowly. When that happens, we say that the model has **converged**.
+and . For now, just assume that this mysterious box devises new values and then the machine learning system re-evaluates all those features against all those labels, yielding a new value for the loss function, which yields new parameter values. **And the learning continues iterating until the algorithm discovers the model parameters with the lowest possible loss.** Usually, you iterate until overall loss stops changing or at least changes extremely slowly. When that happens, we say that the model has **converged**.
 
 **Program Demo** : [Reducing Loss](https://github.com/11081999/100DaysOfMLCode/blob/main/Complementary_Classes/GoogleMLCrashCourse/Programs/Reducing_Loss/Reducing_Loss)
 
 ### Reducing Loss | Gradient Descent
+Calculating the loss function for every conceivable value of ***w1*** over the entire data set would be an inefficient way of finding the convergence point. Let's examine a better mechanism—very popular in machine learning—called **gradient descent**.
 
+The first stage in gradient descent is to pick a starting value (a starting point) for ***w1***. The starting point doesn't matter much; therefore, many algorithms simply set ***w1*** to 0 or pick a random value. The following figure shows that we've picked a starting point slightly greater than 0.
+
+The gradient descent algorithm then calculates the gradient of the loss curve at the starting point. The gradient of the loss is equal to the derivative (slope, m) of the curve, and tells you which way is "warmer" or "colder." When there are multiple weights, the gradient is a vector of partial derivatives with respect to the weights.
+
+Note that a gradient is a vector, so it has both of the following characteristics:
+
+- a direction
+- a magnitude
+
+The gradient always points in the direction of steepest increase in the loss function. The gradient descent algorithm takes a step in the direction of the negative gradient in order to reduce loss as quickly as possible.
+
+To determine the next point along the loss function curve, the gradient descent algorithm adds some fraction of the gradient's magnitude to the starting point.
+
+The gradient descent then repeats this process, edging ever closer to the minimum.
 
 **Program Demo** : [Gradient Descent]()
 
+
+[Source](https://developers.google.com/machine-learning/crash-course/reducing-loss/gradient-descent)
 ### Reducing Loss | Learning Rate
 
 ### Reducing Loss | Optimizing Learning Rate

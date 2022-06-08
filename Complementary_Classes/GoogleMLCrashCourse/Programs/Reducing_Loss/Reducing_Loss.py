@@ -1,4 +1,3 @@
-
 #This program aims to study the concepts of reducing loss
 #by Roberto Rivera Terán
 
