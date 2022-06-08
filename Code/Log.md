@@ -1,5 +1,4 @@
 # 100 Days Of ML - LOG
-
 ## Preparation | Day 0 : June 07 , 2022
  
 **Today's Progress** : I have setup all the things I needed to complete this challenge and also completed choosing the projects I will work on .
@@ -14,7 +13,6 @@ _._     _,-'""`-._
           `-    \`_`"'-
 ```
 ***
-
 ## Data PreProcessing | Day 1 : June 07 , 2012
 
 **Today's Progress** : I has some problems with the given code, but ultimately I was able to update the code and complete the exercise.
@@ -49,9 +47,9 @@ _._     _,-'""`-._
 
 **Notes** : Felt inspired, I decided to do another of the planned activities.
 
-**Today's Progress** : Did a simple Linear regression and plotted the test data along with the trained data.
+**Today's Progress** : Did a simple Linear regression and plotted the test data along with the trained data. I also added a calculation fro the R^2 and its use. I have also determined that I must enlist on further courses so that my ML knowledge enhances exponentially with time.
 
-**Thoughts** : This dataset in particular didn´t needed some kind of encoding or fill missing values. It was fairly easy to do the liner regression though further mathematical understanding of the algorithm is recomended for my future self.
+**Thoughts** : This dataset in particular didn´t needed some kind of encoding or fill missing values. It was fairly easy to do the linear regression, though, further mathematical understanding of the algorithm is recomended for my future self.
 
 **Useful resources**<br>
 [Web page 1](https://www.unite.ai/what-is-linear-regression/)<br>

@@ -1,10 +1,8 @@
 # Simple Linear Regression
 
-
 <p align="center">
   <img src="https://github.com/Avik-Jain/100-Days-Of-ML-Code/blob/master/Info-graphs/Day%202.jpg">
 </p>
-
 
 # Step 1: Data Preprocessing
 ```python
@@ -43,5 +41,11 @@ X_train, X_test, Y_train, Y_test = train_test_split( X, Y, test_size = 1/4, rand
  plt.plot(X_test , regressor.predict(X_test), color ='blue')
  ``` 
 
-
 ### UPDATED CODE by me as of 2022
+
+## Added some insight about the R^2
+ ```python
+from sklearn.metrics import r2_score
+R2_test= r2_score(Y_test, Y_pred)
+R2_train= r2_score(Y_train, regressor.predict(X_train))
+ ``` 
