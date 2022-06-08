@@ -1,5 +1,5 @@
 # 100 Days Of ML - LOG
-## Preparation | Day 0 : June 07 , 2022
+## Preparation | Day 0 : June 07, 2022
  
 **Today's Progress** : I have setup all the things I needed to complete this challenge and also completed choosing the projects I will work on .
 
@@ -13,7 +13,7 @@ _._     _,-'""`-._
           `-    \`_`"'-
 ```
 ***
-## Data PreProcessing | Day 1 : June 07 , 2012
+## Data PreProcessing | Day 1 : June 07, 2012
 
 **Today's Progress** : I has some problems with the given code, but ultimately I was able to update the code and complete the exercise.
 
@@ -43,7 +43,7 @@ _._     _,-'""`-._
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿ 
 ```
 ***
-## Simple Linear Regression | Day 2 : June 7 , 2022
+## Simple Linear Regression | Day 2 : June 7, 2022
 
 **Notes** : Felt inspired, I decided to do another of the planned activities.
 
@@ -64,9 +64,27 @@ _._     _,-'""`-._
 
 ```
 ***
+## ??? | Day 3 : June 08, 2022
+
+**Today's Progress** : 
+- I kept on doing the Google ML crash course up until [Validation Set](https://github.com/11081999/100DaysOfMLCode/blob/main/Complementary_Classes/GoogleMLCrashCourse/ML_pt2.md) .
+- Though, I also did day 3 of the 100-Days-Of-ML-Code github repo.
+
+**Thoughts** : .
+
+**Link of Work:** : .
+
+***
+```
+
+⣿
+
+```
+***
 ## ??? | Day ? : Month ? , 202?
 
-**Today's Progress** : .
+**Today's Progress** : 
+- I kept on doing the Google ML crash course.
 
 **Thoughts** : .
 

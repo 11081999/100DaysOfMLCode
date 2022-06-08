@@ -2,6 +2,7 @@
 ***
 ##  Generalization.
 
+Generalization refers to your model's ability to adapt properly to new, previously unseen data, drawn from the same distribution as the one used to create the model.
 ### Generalization | Peril of Overfitting
 An **overfit** model gets a low loss during training but does a poor job predicting new data. If a model fits the current sample well, how can we trust that it will make good predictions on new data? As you'll [see later on](https://developers.google.com/machine-learning/crash-course/regularization-for-simplicity/l2-regularization), overfitting is caused by making a model more complex than necessary. The fundamental tension of machine learning is between fitting our data well, but also fitting the data as simply as possible.
 
@@ -46,7 +47,7 @@ When we know that any of the preceding three basic assumptions are violated, we 
 
 [Source](https://developers.google.com/machine-learning/crash-course/generalization/peril-of-overfitting)
 ***
-##  Training and Test Sets-
+##  Training and Test Sets
 
 ### Training and Test Sets | Splitting Data
 Make sure that your test set meets the following two conditions:
@@ -54,7 +55,7 @@ Make sure that your test set meets the following two conditions:
 - Is large enough to yield statistically meaningful results.
 - Is representative of the data set as a whole. In other words, don't pick a test set with different characteristics than the training set.
 
-Assuming that your test set meets the preceding two conditions, your goal is to create a model that generalizes well to new data. Our test set serves as a proxy for new data. For example, consider the following figure. Notice that the model learned for the training data is very simple. This model doesn't do a perfect job—a few predictions are wrong. However, this model does about as well on the test data as it does on the training data. In other words, this simple model does not overfit the training data.
+Assuming that your test set meets the preceding two conditions, your goal is to create a model that generalizes well to new data. Our test set serves as a proxy for new data. For example, consider the [following figure](https://developers.google.com/machine-learning/crash-course/images/TrainingDataVsTestData.svg). Notice that the model learned for the training data is very simple. This model doesn't do a perfect job—a few predictions are wrong. However, this model does about as well on the test data as it does on the training data. In other words, this simple model does not overfit the training data.
 
 ```diff 
 - Never train on test data.
