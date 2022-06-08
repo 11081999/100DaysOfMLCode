@@ -2,19 +2,17 @@
 
 ***
 ##  Introduction to Machine Learning
-
 - use statistics and not logic to solve problems.
 
 ***
 ##  Framing
-
 This module investigates how to frame a task as a machine learning problem, and covers many of the basic vocabulary terms shared across a wide range of machine learning (ML) methods.
 
 **(SUPERVISED) Machine Learning** : Supervised learning uses a training set to teach models to yield the desired output. This training dataset includes inputs and correct outputs, which allow the model to learn over time. The algorithm measures its accuracy through the loss function, adjusting until the error has been sufficiently minimized.
 
 Supervised learning can be separated into two types of problems when data **mining—classification** and **regression**...
 
-- ***ML systems learn how to combine input to produce useful predictions on never-before-seen data. ***
+- ***ML systems that learn how to combine input to produce useful predictions on never-before-seen data. ***
 
 [Source](https://www.ibm.com/cloud/learn/supervised-learning)
 
@@ -56,7 +54,6 @@ A **classification** model predicts discrete values. For example, classification
 ##  Descending into ML
 
 ### Linear Regression
-
 True, the line on linear regression doesn't pass through every dot, but the line does clearly show the relationship between chirps and temperature. Using the equation for a line, you could write down this relationship as follow:
 
 ```
@@ -91,16 +88,18 @@ Although this model uses only one feature, a more sophisticated model might rely
 ```
     y'= b + w1*x1 +  w2*x2 +  w3*x3
 ```
+
+**Program Demo** : [Linear Regression Example](https://github.com/11081999/100DaysOfMLCode/blob/main/Code/Day_2/src/main.py)
+
 [Source](https://developers.google.com/machine-learning/crash-course/descending-into-ml/linear-regression)
 
+***
 ### Training and Loss
-
 **Training** a model simply means learning (determining) good values for all the weights and the bias from labeled examples. In supervised learning, a machine learning algorithm builds a model by examining many examples and attempting to find a model that minimizes loss; this process is called **empirical risk minimization**.
 
 Loss is the penalty for a bad prediction. That is, **loss** is a number indicating how bad the model's prediction was on a single example. If the model's prediction is perfect, the loss is zero; otherwise, the loss is greater. The goal of training a model is to find a set of weights and biases that have low loss, on average, across all examples.
 
 ### Training and Loss | Squared loss
-
 The linear regression models we'll examine here use a loss function called **squared loss** (also known as **L2 loss**). The squared loss for a single example is as follows:
 
 ```
@@ -126,3 +125,50 @@ Although MSE is commonly-used in machine learning, it is neither the only practi
 
 [Source](https://developers.google.com/machine-learning/crash-course/descending-into-ml/training-and-loss)
 ***
+
+## Reducing Loss
+
+### Reducing Loss | Iterative Approach
+Iterative learning might remind you of the ["Hot and Cold"](https://www.howcast.com/videos/258352-how-to-play-hot-and-cold) kid's game for finding a hidden object like a thimble. In this game, the "hidden object" is the best possible model. You'll start with a wild guess ("The value of **w1** is 0.") and wait for the system to tell you what the loss is. Then, you'll try another guess ("The value of **w1** is 0.5.") and see what the loss is. Aah, you're getting warmer. Actually, if you play this game right, you'll usually be getting warmer. The real trick to the game is trying to find the best possible model as efficiently as possible.
+
+We'll use this same iterative approach throughout the Machine Learning Crash Course, detailing various complications, particularly within that stormy cloud labeled "Model (Prediction Function)." Iterative strategies are prevalent in machine learning, primarily because they scale so well to large data sets.
+
+The "model" takes one or more features as input and returns one prediction (**y'**) as output. To simplify, consider a model that takes one feature and returns one prediction:
+
+```
+    y'= b + w1*x1
+```
+
+What initial values should we set for **b** and **w1**? For linear regression problems, it turns out that the starting values aren't important. We could pick random values, but we'll just take the following trivial values instead:
+
+- **b** = 0
+- **w1** = 0
+
+Suppose that the first feature value is 10. Plugging that feature value into the prediction function yields:
+
+```
+    y'= 0 + 0 * 10 = 0
+```
+
+The "Compute Loss" part of the diagram is the [loss function](https://developers.google.com/machine-learning/crash-course/descending-into-ml/training-and-loss) that the model will use. Suppose we use the squared loss function. The loss function takes in two input values:
+
+- **y'**: The model's prediction for features x
+- **y**: The correct label corresponding to features x.
+
+At last, we've reached the "Compute parameter updates" part of the diagram. It is here that the machine learning system examines the value of the loss function and generates new values for
+and . For now, just assume that this mysterious box devises new values and then the machine learning system re-evaluates all those features against all those labels, yielding a new value for the loss function, which yields new parameter values. And the learning continues iterating until the algorithm discovers the model parameters with the lowest possible loss. Usually, you iterate until overall loss stops changing or at least changes extremely slowly. When that happens, we say that the model has **converged**.
+
+**Program Demo** : []
+
+### Reducing Loss | Gradient Descent
+
+### Reducing Loss | Learning Rate
+
+### Reducing Loss | Optimizing Learning Rate
+
+### Reducing Loss | Stochastic Gradient Descent
+
+
+
+
+[Source](https://developers.google.com/machine-learning/crash-course/reducing-loss/an-iterative-approach)
