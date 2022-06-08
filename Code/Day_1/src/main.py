@@ -17,7 +17,7 @@ print("Y:       \n", Y)
 
 #Step 3: Handling the missing data
 
-#?  Replace the missing data by the mean or median of the entire column
+#?  Replace the missing data by the mean or median of the entire column.
 #?  This is the use of the Imputer of sklearn().
 
 from sklearn.impute import SimpleImputer
@@ -32,8 +32,8 @@ print("Imputer_X:       \n", X)
 
 #Step 4: Encoding categorical data
 
-#?  Categorical data are variables that ocntain label values rather 
-#?  than numeric. Values such as "Yes" or "No" cannot be used in 
+#?  Categorical data are variables that ocntain label values rather- 
+#?  than numeric. Values such as "Yes" or "No" cannot be used in. 
 #?  mathematical models so these values are encoded into numbers.
 #?  That is the purpose of the LabelEncoder(). 
 
@@ -45,7 +45,7 @@ print("____________________________________")
 print("\n >> label values are encoded into numbers \n")
 print("LabelEncoder_X:       \n", X)
 
-#Step 4.1: Creating a dummy variable
+##Step 4.1: Creating a dummy variable
 #onehotencoder = OneHotEncoder()
 #X = onehotencoder.fit_transform(X).toarray()
 labelencoder_Y = LabelEncoder()
@@ -58,8 +58,8 @@ print("HotEncoder_Y:       \n", Y)
 
 #Step 5: Splitting the datasets into training sets and Test sets
 
-#?  Split data into training data and validation data 
-#?  using train_test_split()
+#?  Split data into training data and validation data- 
+#?  using train_test_split().
 
 from sklearn.model_selection import train_test_split
 # Note: Only 20% of all the data will be used as testing data
@@ -77,7 +77,7 @@ print("Y_test:          \n",    Y_test)
 #Step 6: Feature Scaling, standarization (can also use normalization)
 from sklearn.preprocessing import StandardScaler
 
-#?  scales the features of our data 
+#?  scales the features of our data -
 #?  so that they all have a similar range.
 
 scaler_X = StandardScaler()
@@ -87,8 +87,8 @@ X_test = scaler_X.fit_transform(X_test)
 
 print("\n____________________________________")
 print("\n >> Scaled \n")
-print("X_train, scaled:     \n", X_train)
-print("X_test,  scaled:     \n", X_test)
+print("X_train, StandardScaler:     \n", X_train)
+print("X_test,  StandardScaler:     \n", X_test)
 
 #Step 7: Make a graph (?), maybe next time...
 

@@ -19,9 +19,9 @@ _._     _,-'""`-._
 
 **Today's Progress** : I has some problems with the given code, but ultimately I was able to update the code and complete the exercise.
 
-**Thoughts** : This code may not work in the future, but the knowladge will.
+**Thoughts** : This code may not work in the future, but the knowladge will. I need to refresh my maths skills and concepts.
 
-**Useful resources**
+**Useful resources**<br>
 [Video_1](https://www.youtube.com/watch?v=fwY9Qv96DJY) <br>
 [Video_2](https://www.youtube.com/watch?v=fd_Lgg5KxJY&list=PLTmQbi1PYZ_EnBmO1-E0Z81ArnE-zSR1a&index=8)<br>
 [Web page 1](https://howtolearnmachinelearning.com/articles/feature_scaling_machine_learning/)<br>
@@ -45,7 +45,9 @@ _._     _,-'""`-._
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿ 
 ```
 ***
-## ??? | Day ? : Month ? , 202?
+## Simple Linear Regression | Day 2 : June 7 , 2022
+
+**Notes** : Felt inspired, I decided to do another of the planned activities.
 
 **Today's Progress** : .
 
@@ -59,4 +61,13 @@ _._     _,-'""`-._
 ⣿
 
 ```
+***
+## ??? | Day ? : Month ? , 202?
+
+**Today's Progress** : .
+
+**Thoughts** : .
+
+**Link of Work:** : .
+
 ***
