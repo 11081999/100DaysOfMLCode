@@ -158,9 +158,12 @@ The "Compute Loss" part of the diagram is the [loss function](https://developers
 At last, we've reached the "Compute parameter updates" part of the diagram. It is here that the machine learning system examines the value of the loss function and generates new values for
 and . For now, just assume that this mysterious box devises new values and then the machine learning system re-evaluates all those features against all those labels, yielding a new value for the loss function, which yields new parameter values. And the learning continues iterating until the algorithm discovers the model parameters with the lowest possible loss. Usually, you iterate until overall loss stops changing or at least changes extremely slowly. When that happens, we say that the model has **converged**.
 
-**Program Demo** : []
+**Program Demo** : [Reducing Loss](https://github.com/11081999/100DaysOfMLCode/blob/main/Complementary_Classes/GoogleMLCrashCourse/Programs/Reducing_Loss/Reducing_Loss)
 
 ### Reducing Loss | Gradient Descent
+
+
+**Program Demo** : [Gradient Descent]()
 
 ### Reducing Loss | Learning Rate
 
