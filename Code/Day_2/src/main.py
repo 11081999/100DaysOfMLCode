@@ -57,7 +57,7 @@ plt.plot(X_test , Y_pred, color ='orange')
 plt.subplot(1, 2, 2)    # row 1, column 2, count 2
 plt.scatter(X , Y, color = 'pink')
 
-plt.show()
+#plt.show()
 
 print("\n____________________________________")
 print("\n >> Prediction \n")

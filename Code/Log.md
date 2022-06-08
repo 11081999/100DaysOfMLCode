@@ -49,9 +49,12 @@ _._     _,-'""`-._
 
 **Notes** : Felt inspired, I decided to do another of the planned activities.
 
-**Today's Progress** : .
+**Today's Progress** : Did a simple Linear regression and plotted the test data along with the trained data.
 
-**Thoughts** : .
+**Thoughts** : This dataset in particular didn´t needed some kind of encoding or fill missing values. It was fairly easy to do the liner regression though further mathematical understanding of the algorithm is recomended for my future self.
+
+**Useful resources**<br>
+[Web page 1](https://www.unite.ai/what-is-linear-regression/)<br>
 
 **Link of Work:** : .
 
