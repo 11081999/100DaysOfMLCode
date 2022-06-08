@@ -55,6 +55,7 @@ _._     _,-'""`-._
 
 **Useful resources**<br>
 [Web page 1](https://www.unite.ai/what-is-linear-regression/)<br>
+[video 1](https://www.youtube.com/watch?v=nk2CQITm_eo)<br>
 
 **Link of Work:** : .
 

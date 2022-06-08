@@ -65,3 +65,16 @@ print("(X_train) Y_pred:         \n",    regressor.predict(X_train))
 print("(X_test) Y_pred:         \n",    Y_pred)
 
 #?: Done !
+
+#Extra Steps 1: Calculate R^2
+
+#?  R^2 tells us how much of the variation in "Y_AXYS"-
+#?  can be explained by "X_AXYS"
+
+from sklearn.metrics import r2_score
+R2_test= r2_score(Y_test, Y_pred)
+R2_train= r2_score(Y_train, regressor.predict(X_train))
+
+print("\n____________________________________")
+print("\n >> How much of the variation in Y can be explained by X \n")
+print("R^2: test/train", (R2_test*100), (R2_train*100))
