@@ -70,6 +70,7 @@ X = np.array([1,2,3,4,5])
 # Y: Target (single dim array)
 Y = np.array([5,7,9,11,13])
 
+#Step 2: Visualize data.
 print("\n____________________________________")
 print("\n >> Data: \n")
 print("X : \n", X)
