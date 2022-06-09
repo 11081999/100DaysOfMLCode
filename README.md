@@ -8,6 +8,9 @@ First 54 days guided by the [100-Days-Of-ML-Code](https://github.com/Avik-Jain/1
 ***
 ***
 # LOG
+
+All code can be found on the respective Day & Folder [here](https://github.com/11081999/100DaysOfMLCode/tree/main/Code)
+
 ## Preparation | Day 0 : June 07, 2022
  
 **Today's Progress** : I have setup all the things I needed to complete this challenge and also completed choosing the projects I will work on .
