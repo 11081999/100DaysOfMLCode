@@ -55,6 +55,7 @@ print("Y:         \n",    Y,        "\n Len:",len(Y))
 #? In this example we drop 
 
 X = X[: , 1:]
+
 print("\n____________________________________")
 print("\n >> Avoiding Dummy Variable Trap \n")
 print("X:         \n",    X,        "\n Len:",len(X))
@@ -72,8 +73,15 @@ print("Y_train:   \n",    Y_train,  "\n Len:",len(Y_train))
 print("Y_test:    \n",    Y_test,   "\n Len:",len(Y_test))
 
 #Step 2: Fitting Multiple Linear Regression to the Training set
+
+#?  In a nutshell: fitting is equal to training. Then, after it is trained, 
+#?  the model can be used to make predictions, usually with a .predict() method call
+#?https://stackoverflow.com/questions/45704226/what-does-the-fit-method-in-scikit-learn-do
+
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
+
+#X_train needs to be 2D apparently
 regressor.fit(X_train, Y_train)
 
 #Step 3: Predicting the Test set results
@@ -83,15 +91,17 @@ print("\n____________________________________")
 print("\n >> Prediction \n")
 print("Y_pred:    \n",    y_pred,   "\n Len:",len(y_pred))
 
-#!This seems a little sus, needs to be checked
-#! x and y must be the same size, idk what´s with that
-
-#x_train=np.arange(0,len(X_train),1)
+print("\n____________________________________")
+print("\n >> Accuracy of our model \n")
+print("acc: ",    regressor.score(X_test,Y_test)*100)
 
 #! Note: sometimes X_train is 2d and that wont work on scatter plot
-plt.scatter(X_test[:,0],   Y_test, color = 'blue')
-plt.scatter(X_train[:,0],   Y_train, color = 'red')
-plt.plot(X_test[:,0],      y_pred, color = 'pink')
-plt.show()
+plt.scatter(X_test[:,0],    Y_test, color   = 'blue')
+plt.scatter(X_train[:,0],   Y_train, color  = 'red')
+
+#! Missing: the graph seems wrong, maybe the prediction data is not up to a linear regression.
+#! Ill advice using the same code on a different more "lineal" dataset
+plt.plot(   X_test[:,0],    y_pred, color   = 'black')
+#plt.show()
 
 #? Done!
