@@ -25,10 +25,15 @@ X_train, X_test, Y_train, Y_test = train_test_split(
 
 print("\n____________________________________")
 print("\n >> Split data into training data and validation data \n")
-print("X_train:         \n",    X_train)
-print("X_test:          \n",    X_test)
-print("Y_train:         \n",    Y_train)
-print("Y_test:          \n",    Y_test)
+print("X_train:   \n",    X_train,  "\n Len:",len(X_train))
+print("X_test:    \n",    X_test,   "\n Len:",len(X_test))
+print("Y_train:   \n",    Y_train,  "\n Len:",len(Y_train))
+print("Y_test:    \n",    Y_test,   "\n Len:",len(Y_test))
+
+print("X_train Len:",   len(X_train))
+print("X_test Len:",    len(X_test))
+print("Y_train Len:",   len(Y_train))
+print("Y_test: Len:",   len(Y_test))
 
 #Step 2: Fitting Simple Linear Regression Model to the training set
 
@@ -43,26 +48,16 @@ regressor = regressor.fit(X_train, Y_train)
 Y_pred = regressor.predict(X_test)
 
 #Step 4: Visualization
-plt.subplot(1, 2, 1)  # row 1, column 2, count 1
-
-##Step 4.1:  Visualizing the training results.
-plt.scatter(X_train , Y_train, color = 'red')
-plt.plot(X_train , regressor.predict(X_train), color ='blue', )
-
-
-##Step 4.2:  Visualizing the test results.
-plt.scatter(X_test , Y_test, color = 'green')
-plt.plot(X_test , Y_pred, color ='orange')
-
-plt.subplot(1, 2, 2)    # row 1, column 2, count 2
-plt.scatter(X , Y, color = 'pink')
-
-#plt.show()
+##Step 4.2:  Visualizing the results.
+plt.scatter(X,          Y,          color   = 'pink')
+plt.scatter(X_test ,    Y_test,     color   = 'green')
+plt.scatter(X_train,    Y_train,    color   = 'blue')
+plt.plot(   X_test ,    Y_pred,     color   = 'red')
+plt.show()
 
 print("\n____________________________________")
 print("\n >> Prediction \n")
-print("(X_train) Y_pred:         \n",    regressor.predict(X_train))
-print("(X_test) Y_pred:         \n",    Y_pred)
+print("Y_pred:    \n",    Y_pred,   "\n Len:",len(Y_pred))
 
 #?: Done !
 
