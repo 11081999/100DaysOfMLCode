@@ -14,42 +14,84 @@ import matplotlib.pyplot as plt
 
 #Step 1.2: Importing the dataset
 dataset = pd.read_csv(r"C:\Users\Roberto\Desktop\100DaysOfMLCode\datasets\50_Startups.csv")
+print("\n____________________________________")
+print("\n >> All data \n")
+print("Data:         \n",    dataset)
+
+# X: data
 X = dataset.iloc[ : , :-1].values
+# Y: Target (single dim array)
 Y = dataset.iloc[ : ,  4 ].values
+
+print("\n____________________________________")
+print("\n >> Raw values \n")
+print("X:           \n",    X,        "\n Len:",len(X))
+print("Y (Profit):  \n",    Y,        "\n Len:",len(Y))
 
 #Step 1.3: Encoding (labels) Categorical data
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 labelencoder = LabelEncoder()
+
+#Encode the "State" column with a number
 X[: , 3] = labelencoder.fit_transform(X[ : , 3])
-onehotencoder = OneHotEncoder()
-X = onehotencoder.fit_transform(X).toarray()
+#onehotencoder = OneHotEncoder()
+#X = onehotencoder.fit_transform(X).toarray()
+
+print("\n____________________________________")
+print("\n >> Encoding (labels) Categorical data \n")
+print("X:         \n",    X,        "\n Len:",len(X))
+print("Y:         \n",    Y,        "\n Len:",len(Y))
 
 #Step 1.4: Avoiding Dummy Variable Trap
+
+#?  The dummy variable trap is a scenario in which two
+#?  or more variables are highly correlated; in simple terms,
+#?  one variable can be predicted from the others.
+#?  Intuitively, there is a duplicate category...
+
+#?  This is, if we drop the male category it is inherently defined in the female
+#?  Category (zero female value indicate male, and vice versa)
+
+#? In this example we drop 
+
 X = X[: , 1:]
+print("\n____________________________________")
+print("\n >> Avoiding Dummy Variable Trap \n")
+print("X:         \n",    X,        "\n Len:",len(X))
 
 #Step 1.5: Splitting the dataset into the Training set and Test set
 from sklearn.model_selection import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split(
     X, Y, test_size = 0.2, random_state = 0)
 
+print("\n____________________________________")
+print("\n >> Splitting the dataset into the Training set and Test set \n")
+print("X_train:   \n",    X_train,  "\n Len:",len(X_train))
+print("X_test:    \n",    X_test,   "\n Len:",len(X_test))
+print("Y_train:   \n",    Y_train,  "\n Len:",len(Y_train))
+print("Y_test:    \n",    Y_test,   "\n Len:",len(Y_test))
 
 #Step 2: Fitting Multiple Linear Regression to the Training set
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_train, Y_train)
 
-#Step 3: Importing the libraries
+#Step 3: Predicting the Test set results
 y_pred = regressor.predict(X_test)
 
 print("\n____________________________________")
 print("\n >> Prediction \n")
-print("Y_pred:    \n", y_pred)
+print("Y_pred:    \n",    y_pred,   "\n Len:",len(y_pred))
 
 #!This seems a little sus, needs to be checked
 #! x and y must be the same size, idk what´s with that
-#plt.scatter(X_test , Y_test, color = 'blue')
-#plt.scatter(X_train , Y_train, color = 'red')
-#plt.scatter(X, y_pred, color = 'pink')
-#plt.show()
+
+#x_train=np.arange(0,len(X_train),1)
+
+#! Note: sometimes X_train is 2d and that wont work on scatter plot
+plt.scatter(X_test[:,0],   Y_test, color = 'blue')
+plt.scatter(X_train[:,0],   Y_train, color = 'red')
+plt.plot(X_test[:,0],      y_pred, color = 'pink')
+plt.show()
 
 #? Done!

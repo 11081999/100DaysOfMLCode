@@ -46,6 +46,11 @@ def gradient_descent(x, y):
     print("m: {} \nb: {} \nCost: {} \niteration: {} \n".format(
         m_curr, b_curr, cost, iter))
 
+    print("\n____________________________________")
+    print("\n >> Split data into training data and validation data \n")
+    print("x:         \n",    x, len(x))
+    print("Y_pred:          \n",    Y_pred, len(Y_pred))
+
     #?  The graph seems kinds wrong though 
     #?  I believe there should not be any more values above 13
     #?  Since the furthest value of X is 5 
