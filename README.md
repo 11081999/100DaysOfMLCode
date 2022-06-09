@@ -2,14 +2,14 @@
 
 I am taking up the challenge to to Learn Machine Learning at least an hour everyday!!
 
-First 54 days guided by the [100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) repository.
+First 54 days guided by the [100-Days-Of-ML-Code](https://github.com/Avik-Jain/100-Days-Of-ML-Code) repository. After that I´ll figure something out. Then I´d like to do a bij project incorporating most of the things I have learned.
 
 ***
 ***
 ***
 # LOG
 
-All code can be found on the respective Day & Folder [here](https://github.com/11081999/100DaysOfMLCode/tree/main/Code)
+All code can be found on the respective Day & Folder [here.](https://github.com/11081999/100DaysOfMLCode/tree/main/Code)
 
 ## Preparation | Day 0 : June 07, 2022
  
@@ -71,7 +71,6 @@ _._     _,-'""`-._
 
 ***
 ```
-
 ⠄⠄⠄⠄⣀⣶⣶⣶⣶⣶⡦⣰⠶⠶⢿⢷⢿⠾⠶⠂
 ⠄⠄⠄⣾⡿⢿⡿⣟⣿⣽⣻⢾⡿⣿⣿⣿⣿⡿⣿⣳⠆⠄⠄⠄⢀⣠⣶⣿⣿
 ⢠⣴⣿⡏⢘⣾⣻⢯⣗⡷⡯⣷⣺⣝⣞⠓⠓⠋⠁⠄⠄⠄⣠⣶⣿⣿⣿⣿⣿
@@ -84,14 +83,13 @@ _._     _,-'""`-._
 ⠄⠄⠄⢸⢸⣟⣗⢧⢫⡰⢺⡽⣝⣞⢾⢽⣳⣿⣻⣯⣿⠄
 ⠄⠄⠄⠄⠈⣨⣆⢞⢎⣾⣻⣺⣳⢽⢯⣟⣷⣻⣽⣿⡾
 ⠄⠄⠄⠄⠄⣿⣿⡧⢿⣿⣿⢾⣽⣻⣽⡷⣿⣻⣯⠗⠁ 
-
 ```
 ***
-## ??? | Day 3 : June 08, 2022
+## Multiple (varible) Linear Regression | Day 3 : June 08, 2022.
 
 **Today's Progress** : 
 - I kept on doing the Google ML crash course up until [Validation Set](https://github.com/11081999/100DaysOfMLCode/blob/main/Complementary_Classes/GoogleMLCrashCourse/ML_pt2.md) .
-- Though, I also did day 3 of the 100-Days-Of-ML-Code github repo. It was a simple Multi-variable linear regression, though the original 100-Days-Of-ML-Code github repo didn´t include or showed a graph. So I had many problems trying to display all variables on a 2d graph. Ultimately I recured to the use os previous code done and focused on a single variable, but determined and learned what is is whe have to do in case it is multivariable , witch is a series of linear regressions for each variable. 
+- Though, I also did day 3 of the 100-Days-Of-ML-Code github repo. It was a simple Multi-variable linear regression, though the original 100-Days-Of-ML-Code github repo didn´t include or showed a graph. So I had many problems trying to display all variables on a 2d graph. Ultimately I recured to the use os previous code done and focused on a single variable, but determined and learned what is is whe have to do in case it is multivariable, witch is a series of linear regressions for each of the present variables.
 
 **Thoughts** : I am starting to connect the dots about the Google Crash course and the 100-Days-Of-ML-Code github repo. For example, I have understood the importance of the train_test_split() I did at [Day_1](https://github.com/11081999/100DaysOfMLCode/tree/main/Code/Day_1/src).
 
@@ -127,6 +125,35 @@ _._     _,-'""`-._
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 ```
 ***
+## Logistic Regression | Day 4 : June 09, 2022.
+
+**Today's Progress** : 
+- I did a simple program that uses the Logistic regresion.
+- I kept on doing the Google ML crash course.
+
+**Thoughts** : .
+
+**Link of Work:** : [Day_4]().
+
+***
+```
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⢟⣛⣿⣿⡿⠿⠛⠻⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⡿⢫⣵⣾⣿⢟⣫⣵⣾⣿⣿⣿⣿⣿⣿⣾⣝⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⢰⣿⣿⣿⢡⣿⣿⣿⣿⣿⡿⢿⣿⡿⠯⠿⢿⣿⣮⡻⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⠧⣿⣿⣿⡏⣿⣿⣿⣿⣿⣵⣿⣿⣿⣿⣖⡻⣽⣷⣶⣿⣹⣿⣿⣿⣿⣿⣿
+⢟⢻⢸⣿⣿⣿⢹⣿⣿⣿⣿⣿⣿⣿⡿⠿⣟⣫⣾⣾⣿⣿⣿⣇⢿⣿⣿⣿⣿⣿
+⣁⡉⣭⣭⣟⣋⢸⣿⣿⣿⣿⣿⣿⡷⠿⢿⣿⣹⣿⣿⢲⣶⣶⣮⢸⣿⣿⣿⣿⣿
+⣿⣿⣹⣿⣿⣿⡜⣿⣿⣿⣿⣿⣟⣣⣤⣴⣮⣿⣿⣿⣏⣀⣂⣿⣸⣿⣿⣿⣿⣿
+⣿⣿⣇⢿⣿⣿⡗⡙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡻⣿⣿⣿⡇⣿⣿⣿⣿⣿
+⣿⣿⣿⣧⢻⣿⡟⣿⣦⣝⢿⣿⣿⣯⡿⣛⣋⠽⠿⣿⠟⣼⣿⣿⣳⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⢸⣿⣷⡹⣿⣿⡇⠝⢿⣿⣷⣤⣙⣿⠿⠿⢿⣛⣿⣳⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⢸⣿⣿⢸⣬⡻⢢⠸⠡⠩⠻⣿⣿⣿⣭⣽⣿⣿⣣⣿⣿⣿⣿⣿⣿⣿
+⣿⣿⣿⠇⣿⣿⣿⣾⣿⣿⣦⡁⠲⣶⣆⢮⡙⡛⢛⣛⣫⣵⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⡿⢟⣼⣿⠟⣥⣾⣿⣿⣿⣿⣰⡺⣭⣄⢴⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣷⣶⣾⣿⣷⣾⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿
+```
+***
 ## ??? | Day ? : Month ? , 202?
 
 **Today's Progress** : 
@@ -138,7 +165,27 @@ _._     _,-'""`-._
 
 ***
 ```
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+⡏⠉⠉⠉⠉⠉⠉⠋⠉⠉⠉⠉⠉⠉⠋⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠙⠉⠉⠉⠹
+⡇⢸⣿⡟⠛⢿⣷⠀⢸⣿⡟⠛⢿⣷⡄⢸⣿⡇⠀⢸⣿⡇⢸⣿⡇⠀⢸⣿⡇⠀⡇
+⡇⢸⣿⣧⣤⣾⠿⠀⢸⣿⣇⣀⣸⡿⠃⢸⣿⡇⠀⢸⣿⡇⢸⣿⣇⣀⣸⣿⡇⠀⡇
+⡇⢸⣿⡏⠉⢹⣿⡆⢸⣿⡟⠛⢻⣷⡄⢸⣿⡇⠀⢸⣿⡇⢸⣿⡏⠉⢹⣿⡇⠀⡇
+⡇⢸⣿⣧⣤⣼⡿⠃⢸⣿⡇⠀⢸⣿⡇⠸⣿⣧⣤⣼⡿⠁⢸⣿⡇⠀⢸⣿⡇⠀⡇
+⣇⣀⣀⣀⣀⣀⣀⣄⣀⣀⣀⣀⣀⣀⣀⣠⣀⡈⠉⣁⣀⣄⣀⣀⣀⣠⣀⣀⣀⣰
+⣇⣿⠘⣿⣿⣿⡿⡿⣟⣟⢟⢟⢝⠵⡝⣿⡿⢂⣼⣿⣷⣌⠩⡫⡻⣝⠹⢿⣿⣷
+⡆⣿⣆⠱⣝⡵⣝⢅⠙⣿⢕⢕⢕⢕⢝⣥⢒⠅⣿⣿⣿⡿⣳⣌⠪⡪⣡⢑⢝⣇
+⡆⣿⣿⣦⠹⣳⣳⣕⢅⠈⢗⢕⢕⢕⢕⢕⢈⢆⠟⠋⠉⠁⠉⠉⠁⠈⠼⢐⢕⢽
+⡗⢰⣶⣶⣦⣝⢝⢕⢕⠅⡆⢕⢕⢕⢕⢕⣴⠏⣠⡶⠛⡉⡉⡛⢶⣦⡀⠐⣕⢕
+⡝⡄⢻⢟⣿⣿⣷⣕⣕⣅⣿⣔⣕⣵⣵⣿⣿⢠⣿⢠⣮⡈⣌⠨⠅⠹⣷⡀⢱⢕
+⡝⡵⠟⠈⢀⣀⣀⡀⠉⢿⣿⣿⣿⣿⣿⣿⣿⣼⣿⢈⡋⠴⢿⡟⣡⡇⣿⡇⡀⢕
+⡝⠁⣠⣾⠟⡉⡉⡉⠻⣦⣻⣿⣿⣿⣿⣿⣿⣿⣿⣧⠸⣿⣦⣥⣿⡇⡿⣰⢗⢄
+⠁⢰⣿⡏⣴⣌⠈⣌⠡⠈⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣬⣉⣉⣁⣄⢖⢕⢕⢕
+⡀⢻⣿⡇⢙⠁⠴⢿⡟⣡⡆⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣵⣵⣿
+⡻⣄⣻⣿⣌⠘⢿⣷⣥⣿⠇⣿⣿⣿⣿⣿⣿⠛⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣷⢄⠻⣿⣟⠿⠦⠍⠉⣡⣾⣿⣿⣿⣿⣿⣿⢸⣿⣦⠙⣿⣿⣿⣿⣿⣿⣿⣿⠟
+⡕⡑⣑⣈⣻⢗⢟⢞⢝⣻⣿⣿⣿⣿⣿⣿⣿⠸⣿⠿⠃⣿⣿⣿⣿⣿⣿⡿⠁⣠
+⡝⡵⡈⢟⢕⢕⢕⢕⣵⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣿⣿⣿⣿⣿⠿⠋⣀⣈⠙
+⡝⡵⡕⡀⠑⠳⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⢉⡠⡲⡫⡪⡪⡣
+
 ```
 ***
 ## ??? | Day ? : Month ? , 202?
@@ -152,16 +199,35 @@ _._     _,-'""`-._
 
 ***
 ```
-░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+8/10/2016 at 2:17 PM
+
+　　 　 　 　 　 　 ／:::::::::::::::::::::::::::::::::::::`ヽ､
+　　　　　　　　／::::::::::::::::::::::::::::::ヽ:::::::::::::::::::＼
+　　　　　　　/::::::::::::{:::::::::::::ヽ::::::::::::::::::::::::i:::::::::ヽ
+　　　　　　 /::::/::::::∧::::{:::::::::ﾞ;:::i::::::i::::::::::::!::::::::::ﾊ
+　　　　　　 j:::/:::::/　　V::ｰ};;;;;}L}ﾚi:i::::::::::::}:::::::::::::i
+　　　　　　ﾉ::;::::;/{ ノ　 ￣　,,_　　 ｀}:::::::::::j::/:::::::::}
+　　　　　 /::::{:::｛　　,;　　 　 -＝''" j/:::::::/＾Y::::}:::!
+　　　　　/::/:乂ﾍ　_彡 ､　 　 　　ノ/:::::::/　 }::::j::j
+　　　　　{/j::::::::/ﾊ　　　　　　　　 /:::::::/ __ノ:::/j/
+　　 　 　{　i:::::/ j:/i　　 　ｧ‐、　 /:/／ /::::::ζﾉ
+　　　　　　 {::/　( 人　　　 ｰ'　 //(　／!イ::::＼
+　　 　 　 　 i{　 　 　 ＞ 、　　 〈(　　　 {　}ﾄ:::::::＼　　　　　　__ -､
+　　　　　　　ゝ　　　　／:::::::&gt;‐イ　　 　 廴 ﾉ::::::::::ヽ j^!　 ／　 ／
+　　　　　　　 _　 　 　｛::::::::/7''"j　　　 ｰ=彡ﾉ::::::::::ﾉﾉ {／ 　 /｝
+r-ミｰ- 　 　 { i　　／ )ﾉ:::/ {､__　　　_＿ ／:::::::／ﾉ{　 　 ／ /
+　`r-､　　`ヽ}　!　jｰ彡イ　 乂 ｀　 "　 /:::／((　 ｝: i　 /　 /
+　　 ＼　　　　　iイ: :{: 弋　 ＼＼＿ ／{::/　　 ﾉﾉ: : :}　　 /!
+　　 　 ＼　　{　 }: : : Y: :{　　　　　　　　ゞ　　／:/ : j　　 !: }
+　　　　　 ＼　　｛: : :/: :人ゝ- ／ ﾍ ､　　ノ ﾉ: :/: : /　　 i: l
+　　　　　 　 !　　「ヽ; : : : : `ｰ : : : : ゝ二 ／: : `～/　　　i┘
+　　　　　　　i　　 ﾞ､｛: : : : : : : : : : : : : : : : : : : : : : j　　 　 !
+　　　　 　 　 !　　　λ: : : : : : : : : : : : : : : : : : : : : {　　　　i
+　　　　 　 　 i　　　　ﾍ: : : : : : : : : : : : : : : : : : : : λ　　 　}
+　　　　　　　λ　　　/ ヽ: : : : : : : : : : : : : : : : :／ ∧　 　ﾉ
+　　 　 　 　 　 ＼__ /　　ﾄ、: : : : : : : : : : : : : : : : : : ﾍ__／
+　　 　 　 　 　 　 　 　 　 i : : : : : : : : : : : : : : : : : : : :/{
+　　　　　　　　　　　 　 　 i: : : : : : : : : : : : : : : : : : :/: :ヽ
+
 ```
-***
-## ??? | Day ? : Month ? , 202?
-
-**Today's Progress** : 
-- I kept on doing the Google ML crash course.
-
-**Thoughts** : .
-
-**Link of Work:** : .
-
 ***
