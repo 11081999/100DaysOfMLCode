@@ -53,7 +53,7 @@ plt.scatter(X,          Y,          color   = 'pink')
 plt.scatter(X_test ,    Y_test,     color   = 'green')
 plt.scatter(X_train,    Y_train,    color   = 'blue')
 plt.plot(   X_test ,    Y_pred,     color   = 'red')
-plt.show()
+#plt.show()
 
 print("\n____________________________________")
 print("\n >> Prediction \n")
