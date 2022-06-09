@@ -396,7 +396,8 @@ plt.show()
 
 #?Reference: http://www.ritchieng.com/machine-learning-cross-validation/
 
-##  Step 3.2.1:   Model evaluation based on simple train/test split using train_test_split() function
+##  Step 3.2.1:   Model evaluation based on simple train/test split 
+#                 using train_test_split() function
 
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.metrics import accuracy_score, classification_report, precision_score, recall_score 
