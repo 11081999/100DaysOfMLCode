@@ -87,6 +87,10 @@ print("\n >> Accuracy of our model \n")
 print("acc: ",    str(int(round(regressor.score(X_test, Y_test)*100)))+"%", "\n")
 
 #! Note: sometimes X_train is 2d and that wont work on scatter plot
+
+#?  Then what must be done next is to do this very same thing but with each of-
+#?  the rest remaining columns.
+
 plt.scatter(X,          Y,          color   = 'pink')
 plt.scatter(X_test ,    Y_test,     color   = 'green')
 plt.scatter(X_train,    Y_train,    color   = 'blue')
@@ -95,5 +99,5 @@ plt.xlabel('Alcohol')
 plt.ylabel('Quality')
 #plt.show()
 
-#? Done!
+#? Done! Success!
 
