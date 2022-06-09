@@ -3,19 +3,23 @@
 #Kaggle: https://www.kaggle.com/code/shivamnijhawan96/wine-quality-using-linear-regression/notebook
 
 #! OBJECTIVE: 
-#! Use the same code and methods of Day_3.py but with a different dataset.
-#! I believe that the other code didnt work as expected because the data was
-#! Not fitted for a linear regression (Actually it was because it was mutivariable).
+#!  Use the same code and methods of Day_3.py but with a different dataset.
+#!  I believe that the other code (Day_3.py) didnt work as expected because the 
+#!  data was
+#!  Not fitted for a linear regression 
+#!  (Update: Actually it was because it was mutivariable).
 #by Roberto Rivera Terán
 
 #Step 1: Data Preprocessing
-##Step 1.1: Importing the libraries
+##  Step 1.1: Importing the libraries
+
 from tokenize import Double
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-#Step 1.2: Importing the dataset
+##  Step 1.2: Importing the dataset
+
 dataset = pd.read_csv(r"C:\Users\Roberto\Desktop\100DaysOfMLCode\datasets\winequality-red.csv")
 #print("\n____________________________________")
 #print("\n >> All data \n")
@@ -47,7 +51,8 @@ print("\n >> Raw values \n")
 print("X (Alcohol):  \n",    X[len(X)-1],        "\n Len:",len(X))
 print("Y (Quality):  \n",    Y[len(Y)-1],        "\n Len:",len(Y))
 
-##Step 1.2: Splitting the dataset into the Training set and Test set
+##  Step 1.3: Splitting the dataset into the Training set and Test set
+
 from sklearn.model_selection import train_test_split
 X_train, X_test, Y_train, Y_test = train_test_split(
     X, Y, test_size = 0.2, random_state = 0)
@@ -74,7 +79,8 @@ from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_train, Y_train)
 
-##Step 3: Predicting the Test set results
+#Step 2: Predicting the Test set results
+
 y_pred = regressor.predict(X_test)
 
 print("\n____________________________________")
@@ -86,10 +92,12 @@ print("\n____________________________________")
 print("\n >> Accuracy of our model \n")
 print("acc: ",    str(int(round(regressor.score(X_test, Y_test)*100)))+"%", "\n")
 
-#! Note: sometimes X_train is 2d and that wont work on scatter plot
+#Step 3: Visualization.
 
 #?  Then what must be done next is to do this very same thing but with each of-
 #?  the rest remaining columns.
+
+#! Note: sometimes X_train is 2d and that wont work on scatter plot
 
 plt.scatter(X,          Y,          color   = 'pink')
 plt.scatter(X_test ,    Y_test,     color   = 'green')
