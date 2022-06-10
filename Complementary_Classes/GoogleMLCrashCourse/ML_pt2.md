@@ -71,9 +71,13 @@ For example, consider a model that predicts whether an email is spam, using the 
 
 ### Validation Set | Another Partition
 The previous module introduced partitioning a data set into a training set and a test set. This partitioning enabled you to train on one set of examples and then to test the model against a different set of examples. With two partitions, the workflow could look as follows:
-<p align="center" style="background-color:white;">
-  <img src="https://developers.google.com/machine-learning/crash-course/images/WorkflowWithTestSet.svg">
-</p>
+
+<div style="background-color:grey;">
+    <p align="center">
+        <img src="https://developers.google.com/machine-learning/crash-course/images/WorkflowWithTestSet.svg">
+    </p>
+</div>
+
 
 
 [Source](   )
