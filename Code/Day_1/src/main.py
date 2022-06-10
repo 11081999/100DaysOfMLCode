@@ -32,7 +32,7 @@ print("Imputer_X:       \n", X)
 
 #Step 4: Encoding categorical data
 
-#?  Categorical data are variables that ocntain label values rather- 
+#?  Categorical data are variables that contain label values rather- 
 #?  than numeric. Values such as "Yes" or "No" cannot be used in. 
 #?  mathematical models so these values are encoded into numbers.
 #?  That is the purpose of the LabelEncoder(). 
