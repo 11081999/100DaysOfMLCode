@@ -78,6 +78,29 @@ The previous module introduced partitioning a data set into a training set and a
     </p>
 </div>
 
+In the figure, "Tweak model" means adjusting anything about the model you can dream up—from changing the learning rate, to adding or removing features, to designing a completely new model from scratch. At the end of this workflow, you pick the model that does best on the test set.
 
+Dividing the data set into two sets is a good idea, but not a panacea. You can greatly reduce your chances of overfitting by partitioning the data set into the three subsets shown in the following figure:
 
-[Source](   )
+<div style="background-color:grey;">
+    <p align="center">
+        <img src="https://developers.google.com/machine-learning/crash-course/images/PartitionThreeSets.svg">
+    </p>
+</div>
+
+Use the validation set to evaluate results from the training set. Then, use the test set to double-check your evaluation after the model has "passed" the validation set. The following figure shows this new workflow:
+
+<div style="background-color:grey;">
+    <p align="center">
+        <img src="https://developers.google.com/machine-learning/crash-course/images/WorkflowWithValidationSet.svg">
+    </p>
+</div>
+
+In this improved workflow:
+
+- Pick the model that does best on the validation set.
+- Double-check that model against the test set.
+
+This is a better workflow because it creates fewer exposures to the test set.
+
+[Source](https://developers.google.com/machine-learning/crash-course/validation/another-partition)
